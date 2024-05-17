@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+  --Orange: hsl(25, 97%, 53%);
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  width: 100%;
+  background-color: var(--VeryDarkBlue);
+  min-height: 100vh;
+}
+
+.component-section {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  background-color: var(--DarkBlue);
+  width: 400px;
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+  border-radius: 20px;
+  color: var(--White);
+  align-items: center;
+}
+
+.star {
+  align-self: flex-start;
+}
+
+.star > img {
+  background-color: hsl(214, 13%, 25%);
+  padding: 15px;
+  border-radius: 50%;
+  margin: 15px 0px;
+}
+
+h1 {
+  padding: 10px 0px;
+  align-self: flex-start;
+}
+
+.description {
+  color: var(--MediumGrey);
+  font-weight: 400;
+}
+
+.rating-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 25px 0px;
+  gap: 20px;
+}
+
+.rating-btn {
+  background-color: var(--VeryDarkBlue);
+  border-radius: 50%;
+  font-size: 1em;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--LightGrey);
+  transition: all 0.5s ease-in-out;
+  border: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--Orange);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--White);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.active {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.rear-card {
+  display: none;
+}
+
+.front-card {
+  display: none;
+}
+
+.final-rating {
+  margin-top: 30px;
+  color: var(--Orange);
+  background-color: hsla(216, 12%, 54%, 0.129);
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+
+.thank-you {
+  margin: 20px;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+
+.msg {
+  text-align: center;
+  font-weight: 400;
+  color: var(--LightGrey);
+  font-size: 0.95em;
+}
