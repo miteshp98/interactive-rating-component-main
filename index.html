@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="component-section">
+        <div class="wrapper">
+          <div class="star">
+            <img src="images/icon-star.svg" alt="" />
+          </div>
+
+          <h1>How did we do?</h1>
+          <p class="description">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+
+          <div class="rating-wrap">
+            <button class="rating-btn" data-value="1">1</button>
+            <button class="rating-btn" data-value="2">2</button>
+            <button class="rating-btn" data-value="3">3</button>
+            <button class="rating-btn" data-value="4">4</button>
+            <button class="rating-btn" data-value="5">5</button>
+          </div>
+
+          <button class="submit-btn">Submit</button>
+        </div>
+        <div class="rear-card wrapper thank-wrapper">
+          <div class="image">
+            <img src="images/illustration-thank-you.svg" alt="" />
+          </div>
+
+          <p class="final-rating"></p>
+
+          <h2 class="thank-you">Thank You!</h2>
+
+          <p class="msg">
+            We appreciate you taking the time to give a rating if you ever need
+            more support,don't hesitate to get in touch!
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
